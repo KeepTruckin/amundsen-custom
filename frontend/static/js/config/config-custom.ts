@@ -15,10 +15,10 @@ const configCustom: AppConfigCustom = {
     notificationsEnabled: false,
   },
   indexDashboards: {
-    enabled: true,
+    enabled: false, // Enable this after we inject redash dashboards into neo4j
   },
   indexUsers: {
-    enabled: true,    // Enables User Profile within Amundsen Frontend
+    enabled: true,    // Enables User Profile within Amundsen Frontend, we already have Users data in neo4j
   },
   userIdLabel: 'email address',
   issueTracking: {
