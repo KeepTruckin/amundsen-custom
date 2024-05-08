@@ -3,9 +3,11 @@
 import { AppConfigCustom } from './config-types';
 
 const configCustom: AppConfigCustom = {
-  browse: {
+   browse: {
     curatedTags: [],
+    hideNonClickableBadges: false,
     showAllTags: true,
+    showBadgesInHome: true,
   },
   analytics: {
     plugins: [],
@@ -31,6 +33,7 @@ const configCustom: AppConfigCustom = {
     inAppListEnabled: true,
     inAppPageEnabled: true,
     externalEnabled: true,
+    defaultLineageDepth: 5,
     iconPath: 'PATH_TO_ICON',
     isBeta: false,
     urlGenerator: (

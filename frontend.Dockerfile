@@ -12,7 +12,7 @@ COPY amundsen/frontend/amundsen_application/static /app/amundsen_application/sta
 COPY frontend/static /app/amundsen_application/static
 RUN npm run build
 
-FROM python:3.7-slim as base
+FROM python:3.8-slim as base
 WORKDIR /app
 RUN pip3 install gunicorn
 
